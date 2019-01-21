@@ -24,22 +24,22 @@ class IndexController extends Controller
             array_push($menu, $item);
         }
 
-        $item = array('title' => 'Services', 'alias' => 'services');
+        $item = array('title' => 'Мы предлагаем', 'alias' => 'services');
         array_push($menu, $item);
 
-        $item = array('title' => 'Portfolio', 'alias' => 'showcase');
+        $item = array('title' => 'Портфолио', 'alias' => 'showcase');
         array_push($menu, $item);
 
-        $item = array('title' => 'Team', 'alias' => 'our-team');
+        $item = array('title' => 'Команда', 'alias' => 'our-team');
         array_push($menu, $item);
 
-        $item = array('title' => 'Pricing', 'alias' => 'pricing');
-        array_push($menu, $item);
+//        $item = array('title' => 'Pricing', 'alias' => 'pricing');
+//        array_push($menu, $item);
+//
+//        $item = array('title' => 'Blog', 'alias' => 'blog');
+//        array_push($menu, $item);
 
-        $item = array('title' => 'Blog', 'alias' => 'blog');
-        array_push($menu, $item);
-
-        $item = array('title' => 'Contact', 'alias' => 'contact-us');
+        $item = array('title' => 'Контакты', 'alias' => 'contact-us');
         array_push($menu, $item);
 
         return view('site.index', array(

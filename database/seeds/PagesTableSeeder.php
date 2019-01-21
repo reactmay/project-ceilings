@@ -13,8 +13,8 @@ class PagesTableSeeder extends Seeder
     public function run()
     {
         $seeds = [
-            ['Home',  'home', 'text text text text', ''],
-            ['Aboutus',  'about', 'text text text text', ''],
+            ['Главная',  'home', 'text text text text', ''],
+            ['О нас',  'about', 'text text text text', ''],
         ];
 
         foreach($seeds as $seed){

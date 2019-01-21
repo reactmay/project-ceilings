@@ -12,7 +12,7 @@
         <!-- logo -->
         <a class="navbar-brand" href="#body">
             <h1 id="logo">
-                <img src="{{ asset('meghna2/img/logo-meghna.png') }}" alt="Meghna" />
+                <img src="{{ asset('meghna2/img/2.png') }}" alt="Meghna" />
             </h1>
         </a>
         <!-- /logo -->

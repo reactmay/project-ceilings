@@ -5,7 +5,7 @@
 
                 <!-- section title -->
                 <div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-                    <h2>About <span class="color">Us</span></h2>
+                    <h2>О <span class="color">нас</span></h2>
                     <div class="border"></div>
                 </div>
                 <!-- /section title -->
@@ -18,8 +18,8 @@
                         </div>
                         <!-- Express About Yourself -->
                         <div class="about-content text-center">
-                            <h3 class="ddd">We're Creative</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                            <h3 class="ddd">Мы креативные</h3>
+                            <p>Здесь ваш текст.</p>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@
                         </div>
                         <!-- Express About Yourself -->
                         <div class="about-content text-center">
-                            <h3>We're Professional</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                            <h3>Мы профессионалы.</h3>
+                            <p>Здесь ваш текст.</p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                         </div>
                         <!-- Express About Yourself -->
                         <div class="about-content text-center">
-                            <h3>We're Professional</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                            <h3>Мы профессионалы.</h3>
+                            <p>Здесь ваш текст.</p>
                         </div>
                     </div>
                 </div>
@@ -73,39 +73,16 @@
 
                             <!-- features media -->
                             <div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-                                <iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
+                                <iframe src="http://player.vimeo.com/video/113868945" allowfullscreen></iframe>
                             </div>
                             <!-- /features media -->
 
                             <!-- features content -->
                             <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h3>Main Features of Meghna</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                                <a href="#" class="btn btn-transparent">Learn More</a>
-                                <a href="#" class="btn btn-transparent">Purchase Theme</a>
-                            </div>
-                            <!-- /features content -->
-
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="features-item">
-
-                            <!-- features media -->
-                            <div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
-                                <img src="{{ asset('meghna2/img/blog/3D-beach-art.jpg') }}" alt="3D Beach Art | Meghna" class="img-responsive">
-                            </div>
-                            <!-- /features media -->
-
-                            <!-- features content -->
-                            <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <h3>Main Features of Meghna</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                                <a href="#" class="btn btn-transparent">Learn More</a>
-                                <a href="#" class="btn btn-transparent">Purchase Theme</a>
+                                <h3>Немного о нас</h3>
+                                <p>Здесь ваш текст. Здесь ваш текст. Здесь ваш текст. Здесь ваш текст. Здесь ваш текст.#1</p>
+                                <p>Здесь ваш текст. Здесь ваш текст. Здесь ваш текст. Здесь ваш текст. Здесь ваш текст.#2</p>
+                                <a href="#" class="btn btn-transparent">Подробнее</a>
                             </div>
                             <!-- /features content -->
 
@@ -135,7 +112,7 @@ Start Counter Section
                         <span data-speed="3000" data-to="320">320</span>
                     </div>
                     <i class="fa fa-users fa-3x"></i>
-                    <h3>Happy Clients</h3>
+                    <h3>Счастливых клиентов</h3>
                 </div>
             </div>
             <!-- end first count item -->
@@ -147,7 +124,7 @@ Start Counter Section
                         <span data-speed="3000" data-to="565">565</span>
                     </div>
                     <i class="fa fa-check-square fa-3x"></i>
-                    <h3>Projects completed</h3>
+                    <h3>Завершенных проектов</h3>
                 </div>
             </div>
             <!-- end second count item -->
@@ -160,24 +137,25 @@ Start Counter Section
                         <span>%</span>
                     </div>
                     <i class="fa fa-thumbs-up fa-3x"></i>
-                    <h3>Positive feedback</h3>
+                    <h3>Положительных отзывов</h3>
 
                 </div>
             </div>
             <!-- end third count item -->
 
-            <!-- fourth count item -->
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                <div class="counters-item kill-margin-bottom">
+            <!-- third count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+                <div class="counters-item">
                     <div>
-                        <span data-speed="3000" data-to="2500">2500</span>
+                        <span data-speed="3000" data-to="95">95</span>
+                        <span>%</span>
                     </div>
-                    <i class="fa fa-coffee fa-3x"></i>
-                    <h3>Cups of Coffee</h3>
+                    <i class="fa fa-codepen fa-3x"></i>
+                    <h3>Совершенно замеров</h3>
+
                 </div>
             </div>
-            <!-- end fourth count item -->
-
+            <!-- end third count item -->
         </div> 		<!-- end row -->
     </div>   	<!-- end container -->
 </section>   <!-- end section -->
@@ -192,7 +170,7 @@ Start Counter Section
 
             <!-- section title -->
             <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                <h2>Our <span class="color">Services</span></h2>
+                <h2>Мы <span class="color">предлагаем</span></h2>
                 <div class="border"></div>
             </div>
             <!-- /section title -->
@@ -203,8 +181,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-wordpress fa-5x"></i>
                     </div>
-                    <h3>WordPress Theme</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Огромный каталог цветов</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -215,8 +193,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-desktop fa-5x"></i>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Высокое качество продукции</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -227,8 +205,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-play fa-5x"></i>
                     </div>
-                    <h3>Media &amp; Advertisement</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Доступные цены</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -239,8 +217,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-eye fa-5x"></i>
                     </div>
-                    <h3>Graphic Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Монтаж</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -251,8 +229,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-android fa-5x"></i>
                     </div>
-                    <h3>Apps Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Эксклюзив</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -263,8 +241,8 @@ Start Counter Section
                     <div class="service-icon text-center">
                         <i class="fa fa-link fa-5x"></i>
                     </div>
-                    <h3>Networking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+                    <h3>Потолки с рисунком</h3>
+                    <p>Здесь ваш текст</p>
                 </div>
             </article>
             <!-- End Single Service Item -->
@@ -284,7 +262,7 @@ Start Counter Section
 
                 <!-- section title -->
                 <div class="title text-center">
-                    <h2>Our <span class="color">Works</span></h2>
+                    <h2>Наши <span class="color">проекты</span></h2>
                     <div class="border"></div>
                 </div>
                 <!-- /section title -->
@@ -292,11 +270,11 @@ Start Counter Section
                 <!-- portfolio item filtering -->
                 <div class="portfolio-filter clearfix">
                     <ul class="text-center">
-                        <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".app">Mobile App</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".web">Web Design</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".photoshop">Photoshop</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".illustrator">Illustrator</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter="all">Все</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".test1">Обычный 1(тест)</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".test2">Обычный 2 (тест)</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".test3">Обычный 3 (тест)</a></li>
+                        <li><a href="javascript:void(0)" class="filter" data-filter=".test4">Обычный 4 (тест)</a></li>
                     </ul>
                 </div>
                 <!-- /portfolio item filtering -->
@@ -310,173 +288,122 @@ Start Counter Section
         <ul id="og-grid" class="og-grid">
 
             <!-- single portfolio item -->
-            <li class="mix app">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test1">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/1.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/1.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Azuki bean</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <!-- /single portfolio item -->
+
+
+            <!-- single portfolio item -->
+            <li class="mix test1">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/2.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/2.jpg') }}" alt="Meghna" height="650" width="520">
+                    <div class="hover-mask">
+                        <h3>Тут ваше название</h3>
+                        <span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
 
             <!-- single portfolio item -->
-            <li class="mix web">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test2">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/3.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/3.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Veggies sunt bona vobis</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
+
 
             <!-- single portfolio item -->
-            <li class="mix photoshop">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test2">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/4.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/4.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Dandelion horseradish</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
+
 
             <!-- single portfolio item -->
-            <li class="mix illustrator">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test3">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/5.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/5.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Dandelion horseradish</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
+
 
             <!-- single portfolio item -->
-            <li class="mix app">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test3">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/6.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/6.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Azuki bean</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
+
 
             <!-- single portfolio item -->
-            <li class="mix app">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test4">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/7.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/7.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Veggies sunt bona vobis</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
+
 
             <!-- single portfolio item -->
-            <li class="mix web">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
+            <li class="mix test4">
+                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/8.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                    <img src="{{ asset('meghna2/img/portfolio/8.jpg') }}" alt="Meghna" height="650" width="520">
                     <div class="hover-mask">
-                        <h3>Dandelion horseradish</h3>
+                        <h3>Тут ваше название</h3>
                         <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
+                            <i class="fa fa-plus fa-2x"></i>
+                        </span>
                     </div>
                 </a>
             </li>
             <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix photoshop">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
-                    <div class="hover-mask">
-                        <h3>Azuki bean</h3>
-                        <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix photoshop">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
-                    <div class="hover-mask">
-                        <h3>Veggies sunt bona vobis</h3>
-                        <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix illustrator">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
-                    <div class="hover-mask">
-                        <h3>Veggies sunt bona vobis</h3>
-                        <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix web">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
-                    <div class="hover-mask">
-                        <h3>Dandelion horseradish</h3>
-                        <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix app">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                    <img src="{{ asset('meghna2/img/portfolio/portx1.jpg') }}" alt="Meghna">
-                    <div class="hover-mask">
-                        <h3>Azuki bean</h3>
-                        <span>
-									<i class="fa fa-plus fa-2x"></i>
-								</span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
         </ul> <!-- end og grid -->
     </div>  <!-- portfolio items wrapper -->
 
@@ -492,7 +419,7 @@ Start Counter Section
 
             <!-- section title -->
             <div class="title text-center">
-                <h2>Our <span class="color">Skills</span></h2>
+                <h2>Наши <span class="color">навыки</span></h2>
                 <div class="border"></div>
             </div>
             <!-- /section title -->
@@ -500,11 +427,11 @@ Start Counter Section
             <!-- skill set -->
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
                 <div class="skill-chart text-center">
-							<span class="chart" data-percent="80">
-								<span class="percent"></span>
+							<span class="chart" data-percent="95">
+								<span class="percent">95</span>
 							</span>
-                    <h3><i class="fa fa-wordpress"></i> Wordpress</h3>
-                    <p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+                    <h3><i class="fa fa-wordpress"></i> Монтаж ....</h3>
+                    <p>Здесь ваш текст описание.</p>
                 </div>
             </div>
             <!-- end skill set -->
@@ -513,10 +440,10 @@ Start Counter Section
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
                 <div class="skill-chart text-center">
 							<span class="chart" data-percent="90">
-								<span class="percent">86</span>
+								<span class="percent">90</span>
 							</span>
-                    <h3><i class="fa fa-html5"></i> HTML 5</h3>
-                    <p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+                    <h3><i class="fa fa-html5"></i> Монтаж и отделка</h3>
+                    <p>Здесь ваш текст описание.</p>
                 </div>
             </div>
             <!-- end skill set -->
@@ -525,10 +452,10 @@ Start Counter Section
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
                 <div class="skill-chart text-center">
 							<span class="chart" data-percent="85">
-								<span class="percent"></span>
+								<span class="percent">85</span>
 							</span>
-                    <h3><i class="fa fa-android"></i> Android</h3>
-                    <p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+                    <h3><i class="fa fa-android"></i> Монтаж многоуровневый</h3>
+                    <p>Здесь ваш текст описание.</p>
                 </div>
             </div>
             <!-- end skill set -->
@@ -537,10 +464,10 @@ Start Counter Section
             <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
                 <div class="skill-chart text-center">
 							<span class="chart" data-percent="70">
-								<span class="percent"></span>
+								<span class="percent">70</span>
 							</span>
-                    <h3><i class="fa fa-apple"></i> IOS</h3>
-                    <p>Lorem ipsum has erroribus design color vituper bonorum depend you usedcom.bonorum dependan be used.</p>
+                    <h3><i class="fa fa-apple"></i> Монтаж и тд... </h3>
+                    <p>Здесь ваш текст описание.</p>
                 </div>
             </div>
             <!-- end skill set -->
@@ -558,7 +485,7 @@ Start Counter Section
 
             <!-- section title -->
             <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
-                <h2>Our <span class="color">Team</span></h2>
+                <h2>Наша <span class="color">Команда</span></h2>
                 <div class="border"></div>
             </div>
             <!-- /section title -->
@@ -568,7 +495,7 @@ Start Counter Section
                 <article class="team-mate">
                     <div class="member-photo">
                         <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/member-1.jpg') }}" alt="Meghna">
+                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
                         <!-- /member photo -->
 
                         <!-- member social profile -->
@@ -585,14 +512,14 @@ Start Counter Section
 
                     <!-- member name & designation -->
                     <div class="member-title">
-                        <h3>Abul Mal Muhit</h3>
-                        <span>CEO/Founder</span>
+                        <h3>Иван</h3>
+                        <span>Должность или позиция</span>
                     </div>
                     <!-- /member name & designation -->
 
                     <!-- about member -->
                     <div class="member-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                        <p>Описание .....</p>
                     </div>
                     <!-- /about member -->
 
@@ -605,7 +532,7 @@ Start Counter Section
                 <article class="team-mate">
                     <div class="member-photo">
                         <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/member-1.jpg') }}" alt="Meghna">
+                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
                         <!-- /member photo -->
 
                         <!-- member social profile -->
@@ -622,14 +549,14 @@ Start Counter Section
 
                     <!-- member name & designation -->
                     <div class="member-title">
-                        <h3>Frank Miller</h3>
-                        <span>Manager</span>
+                        <h3>Александр</h3>
+                        <span>Должность или позиция</span>
                     </div>
                     <!-- /member name & designation -->
 
                     <!-- about member -->
                     <div class="member-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                        <p>Описание .....</p>
                     </div>
                     <!-- /about member -->
                 </article>
@@ -641,7 +568,7 @@ Start Counter Section
                 <article class="team-mate">
                     <div class="member-photo">
                         <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/member-1.jpg') }}" alt="Meghna">
+                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
                         <!-- /member photo -->
 
                         <!-- member social profile -->
@@ -658,14 +585,14 @@ Start Counter Section
 
                     <!-- member name & designation -->
                     <div class="member-title">
-                        <h3>Michael Jonson</h3>
-                        <span>Web Developer</span>
+                        <h3>Артем</h3>
+                        <span>Должность или позиция</span>
                     </div>
                     <!-- /member name & designation -->
 
                     <!-- about member -->
                     <div class="member-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                        <p>Описание .....</p>
                     </div>
                     <!-- /about member -->
                 </article>
@@ -677,7 +604,7 @@ Start Counter Section
                 <article class="team-mate kill-margin-bottom">
                     <div class="member-photo">
                         <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/member-1.jpg') }}" alt="Meghna">
+                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
                         <!-- /member photo -->
 
                         <!-- member social profile -->
@@ -694,14 +621,14 @@ Start Counter Section
 
                     <!-- member name & designation -->
                     <div class="member-title">
-                        <h3>Mo. Kha. Alamgir</h3>
-                        <span>SEO Specialist</span>
+                        <h3>Олег</h3>
+                        <span>Должность или позиция</span>
                     </div>
                     <!-- /member name & designation -->
 
                     <!-- about member -->
                     <div class="member-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+                        <p>Описание .....</p>
                     </div>
                     <!-- /about member -->
                 </article>
@@ -892,7 +819,7 @@ Start Counter Section
 
                 <!-- section title -->
                 <div class="sub-title text-center wow fadeInDown" data-wow-duration="500ms">
-                    <h3>What People Say About Us</h3>
+                    <h3>Отзывы наших клиентов</h3>
                 </div>
                 <!-- /section title -->
 
@@ -904,18 +831,18 @@ Start Counter Section
 
                         <!-- client photo -->
                         <div class="client-thumb">
-                            <img src="{{ asset('meghna2/img/team/client.jpg') }}" class="img-responsive" alt="Meghna">
+                            <img src="{{ asset('meghna2/img/client/1.jpg') }}" class="img-responsive" alt="Meghna">
                         </div>
                         <!-- /client photo -->
 
                         <!-- client info -->
                         <div class="client-info">
                             <div class="client-meta">
-                                <h3>Abul Mal Muhit</h3>
-                                <span>Dec 26, 2014</span>
+                                <h3>Виктория</h3>
+                                <span>Декабрь 26, 2018</span>
                             </div>
                             <div class="client-comment">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
+                                <p>Отличное качество и цены очень порадовали! Потолок оформили идеально, как я и мечтала! Спасибо Вам большое!!!</p>
                                 <ul class="social-profile">
                                     <li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
@@ -932,18 +859,18 @@ Start Counter Section
 
                         <!-- client photo -->
                         <div class="client-thumb">
-                            <img src="{{ asset('meghna2/img/team/client.jpg') }}" class="img-responsive" alt="Meghna">
+                            <img src="{{ asset('meghna2/img/client/2.jpg') }}" class="img-responsive" alt="Meghna">
                         </div>
                         <!-- /client photo -->
 
                         <!-- client info -->
                         <div class="client-info">
                             <div class="client-meta">
-                                <h3>Abul Mal Muhit</h3>
-                                <span>Dec 26, 2014</span>
+                                <h3>Светлана</h3>
+                                <span>Август 5, 2018</span>
                             </div>
                             <div class="client-comment">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
+                                <p>Моя подруга похвасталась мне, какой потолок ей установили специалисты компании «Твой стиль», и я тоже решила поставить себе натяжной...</p>
                                 <ul class="social-profile">
                                     <li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
@@ -960,18 +887,18 @@ Start Counter Section
 
                         <!-- client photo -->
                         <div class="client-thumb">
-                            <img src="{{ asset('meghna2/img/team/client.jpg') }}" class="img-responsive" alt="Meghna">
+                            <img src="{{ asset('meghna2/img/client/3.jpg') }}" class="img-responsive" alt="Meghna">
                         </div>
                         <!-- /client photo -->
 
                         <!-- client info -->
                         <div class="client-info">
                             <div class="client-meta">
-                                <h3>Abul Mal Muhit</h3>
-                                <span>Dec 26, 2014</span>
+                                <h3>Захар</h3>
+                                <span>Января 15, 2019</span>
                             </div>
                             <div class="client-comment">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ex, cupiditate, error, suscipit saepe sed ea consequuntur inventore sequi sit illo.</p>
+                                <p>Заказывал потолки в компании Твой стиль. Никаких нареканий нет, персонал достаточно вежливый. Буду вас рекомендовать.</p>
                                 <ul class="social-profile">
                                     <li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
@@ -1095,34 +1022,29 @@ Start Counter Section
 
             <!-- section title -->
             <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                <h2>Get In <span class="color">Touch</span></h2>
+                <h2>Форма обратной <span class="color">связи</span></h2>
                 <div class="border"></div>
             </div>
             <!-- /section title -->
 
             <!-- Contact Details -->
             <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-                <h3>Contact Details</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.</p>
+                <h3>Подробная информация</h3>
+                <p>Мы находимся или не находимся, там та тамта... тестовый текст</p>
                 <div class="contact-details">
                     <div class="con-info clearfix">
                         <i class="fa fa-home fa-lg"></i>
-                        <span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+                        <span>г. Хабаровск, ул. Центр 3</span>
                     </div>
 
                     <div class="con-info clearfix">
                         <i class="fa fa-phone fa-lg"></i>
-                        <span>Phone: +880-31-000-000</span>
-                    </div>
-
-                    <div class="con-info clearfix">
-                        <i class="fa fa-fax fa-lg"></i>
-                        <span>Fax: +880-31-000-000</span>
+                        <span>Телефон: +7-914-234-23-23</span>
                     </div>
 
                     <div class="con-info clearfix">
                         <i class="fa fa-envelope fa-lg"></i>
-                        <span>Email: hello@meghna.com</span>
+                        <span>Эл. почта: potolok@mail.ru</span>
                     </div>
                 </div>
             </div>
@@ -1133,19 +1055,23 @@ Start Counter Section
                 <form id="contact-form" method="post" action="sendmail.php" role="form">
 
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                        <input type="text" placeholder="Ваше имя" class="form-control" name="name" id="name">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-control" name="phone" id="phone">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                        <input type="email" placeholder="Ваш E-mail" class="form-control" name="email" id="email">
                     </div>
 
                     <div class="form-group">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                        <input type="text" placeholder="Заголовок" class="form-control" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Сообщение" class="form-control" name="message" id="message"></textarea>
                     </div>
 
                     <div id="mail-success" class="success">
@@ -1157,7 +1083,7 @@ Start Counter Section
                     </div>
 
                     <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">
                     </div>
 
                 </form>
@@ -1167,11 +1093,11 @@ Start Counter Section
         </div> <!-- end row -->
     </div> <!-- end container -->
 
-    <!-- Google Map -->
-    <div class="google-map wow fadeInDown" data-wow-duration="500ms">
-        <div id="map-canvas"></div>
-    </div>
-    <!-- /Google Map -->
+    {{--<!-- Google Map -->--}}
+    {{--<div class="google-map wow fadeInDown" data-wow-duration="500ms">--}}
+        {{--<div id="map-canvas"></div>--}}
+    {{--</div>--}}
+    {{--<!-- /Google Map -->--}}
 
 </section> <!-- end section -->
 
@@ -1186,13 +1112,14 @@ Start Counter Section
                 <!-- Footer Social Links -->
                 <div class="social-icon">
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/potolok.me/"><i class="fa fa-instagram"></i></a></li>
+                        {{--<li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-youtube"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
+                        {{--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>--}}
                     </ul>
                 </div>
                 <!--/. End Footer Social Links -->
@@ -1200,11 +1127,11 @@ Start Counter Section
                 <!-- copyright -->
                 <div class="copyright text-center">
                     <a href="{{ asset('meghna2/index.html') }}">
-                        <img src="{{ asset('meghna2/img/logo-meghna.png') }}" alt="Meghna" />
+                        <img src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna" />
                     </a>
                     <br />
 
-                    <p>Design And Developed by <a href="http://www.themefisher.com"> Themefisher Team</a>. Copyright &copy; 2015. All Rights Reserved.</p>
+                    <p>Натяжные потолки г. Хабаровск.    &copy; <?php echo date('Y'); ?>. Все права защищены.</p>
                 </div>
                 <!-- /copyright -->
 

@@ -9,14 +9,14 @@
 
     <meta name="author" content="Muhammad Morshed">
 
-    <title>Meghna | Responsive Multipurpose Parallax HTML5 Template</title>
+    <title>Натяжные потолки в Хабаровске</title>
 
     <!-- Mobile Specific Meta
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('meghna2/img/favicon.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('meghna2/img/favicon1.png') }}" />
 
     <!-- CSS
     ================================================== -->
@@ -69,7 +69,7 @@ Start Preloader
 ==================================== -->
 <div id="loading-mask">
     <div class="loading-img">
-        <img alt="Meghna Preloader" src="{{ asset('meghna2/img/preloader.gif') }}"  />
+        <img alt="Meghna Preloader" src="{{ asset('meghna2/img/index.square-grid-loader.gif') }}"  />
     </div>
 </div>
 <!--
@@ -84,19 +84,34 @@ Welcome Slider
     <div id="slitSlider" class="sl-slider-wrapper">
         <div class="sl-slider">
 
+            {{--<!-- single slide item -->--}}
+            {{--<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">--}}
+                {{--<div class="sl-slide-inner">--}}
+                    {{--<div class="bg-img bg-img-1"></div>--}}
+                    {{--<div class="carousel-caption">--}}
+                        {{--<div>--}}
+                            {{--<img class="wow fadeInUp" src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna">--}}
+                            {{--<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Натяжные потолки</h2>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<!-- /single slide item -->--}}
+
             <!-- single slide item -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-1"></div>
-                    <div class="carousel-caption">
-                        <div>
-                            <img class="wow fadeInUp" src="{{ asset('meghna2/img/meghna.png') }}" alt="Meghna">
-                            <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Welcome To Meghna</h2>
+                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-1"></div>
+                        <div class="carousel-caption">
+                            <div>
+                                <h2 class="heading animated fadeInDown">Высокое качество</h2>
+                                <h3 class="animated fadeInUp">Универсальный дизайн</h3>
+                                <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /single slide item -->
+                <!-- /single slide item -->
 
             <!-- single slide item -->
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
@@ -104,9 +119,9 @@ Welcome Slider
                     <div class="bg-img bg-img-2"></div>
                     <div class="carousel-caption">
                         <div>
-                            <h2 class="heading animated fadeInDown">Highly Responsive</h2>
-                            <h3 class="animated fadeInUp">With all Mejor Browser support including IE 9</h3>
-                            <a class="btn btn-green animated fadeInUp" href="#">Get Started</a>
+                            <h2 class="heading animated fadeInDown">Замер в удобное для вас время</h2>
+                            <h3 class="animated fadeInUp">Все для дорогих клиентов</h3>
+                            <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
                         </div>
                     </div>
                 </div>
@@ -119,9 +134,9 @@ Welcome Slider
                     <div class="bg-img bg-img-3"></div>
                     <div class="carousel-caption">
                         <div>
-                            <h2 class="heading animated fadeInRight">One Page Parallax HTML Template</h2>
-                            <h3 class="animated fadeInLeft">Clean and Professional Design</h3>
-                            <a class="btn btn-green animated fadeInUp" href="#">Learn More</a>
+                            <h2 class="heading animated fadeInRight">Большой каталог цветов</h2>
+                            <h3 class="animated fadeInLeft">В разных тонах</h3>
+                            <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
                         </div>
                     </div>
                 </div>
