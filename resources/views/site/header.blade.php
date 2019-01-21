@@ -19,18 +19,15 @@
     </div>
 
     <!-- main nav -->
-    <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-        <ul id="nav" class="nav navbar-nav">
-            <li class="current"><a href="#body">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#showcase">Portfolio</a></li>
-            <li><a href="#our-team">Team</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact-us">Contact</a></li>
-        </ul>
-    </nav>
+    @if(isset($menu))
+        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+            <ul id="nav" class="nav navbar-nav">
+                @foreach($menu as $item)
+                    <li><a href="#{{ $item['alias'] }}">{{ $item['title'] }}</a></li>
+                @endforeach
+            </ul>
+        </nav>
+    @endif
     <!-- /main nav -->
 
 </div>

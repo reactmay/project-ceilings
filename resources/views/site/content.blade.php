@@ -1,126 +1,124 @@
+@if(isset($pages) && is_object($pages))
+    <section id="about" class="bg-one">
+        <div class="container">
+            <div class="row">
 
-<!--
-Start About Section
-==================================== -->
-<section id="about" class="bg-one">
-    <div class="container">
-        <div class="row">
-
-            <!-- section title -->
-            <div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-                <h2>About <span class="color">Us</span></h2>
-                <div class="border"></div>
-            </div>
-            <!-- /section title -->
-
-            <!-- About item -->
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-                <div class="wrap-about">
-                    <div class="icon-box">
-                        <i class="fa fa-lightbulb-o fa-4x"></i>
-                    </div>
-                    <!-- Express About Yourself -->
-                    <div class="about-content text-center">
-                        <h3 class="ddd">We're Creative</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-                    </div>
+                <!-- section title -->
+                <div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+                    <h2>About <span class="color">Us</span></h2>
+                    <div class="border"></div>
                 </div>
-            </div>
-            <!-- End About item -->
+                <!-- /section title -->
 
-            <!-- About item -->
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
-                <div class="wrap-about">
-                    <div class="icon-box">
-                        <i class="fa fa-users fa-4x"></i>
-                    </div>
-                    <!-- Express About Yourself -->
-                    <div class="about-content text-center">
-                        <h3>We're Professional</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End About item -->
-
-            <!-- About item -->
-            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-                <div class="wrap-about kill-margin-bottom">
-                    <div class="icon-box">
-                        <i class="fa fa-users fa-4x"></i>
-                    </div>
-                    <!-- Express About Yourself -->
-                    <div class="about-content text-center">
-                        <h3>We're Professional</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End About item -->
-
-        </div> 		<!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
-
-<!--
-Start Main Features
-==================================== -->
-<section id="main-features">
-    <div class="container">
-        <div class="row">
-
-            <!-- features item -->
-            <div id="features">
-                <div class="item">
-
-                    <div class="features-item">
-
-                        <!-- features media -->
-                        <div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-                            <iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
+                    <div class="wrap-about">
+                        <div class="icon-box">
+                            <i class="fa fa-lightbulb-o fa-4x"></i>
                         </div>
-                        <!-- /features media -->
-
-                        <!-- features content -->
-                        <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h3>Main Features of Meghna</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                            <a href="#" class="btn btn-transparent">Learn More</a>
-                            <a href="#" class="btn btn-transparent">Purchase Theme</a>
+                        <!-- Express About Yourself -->
+                        <div class="about-content text-center">
+                            <h3 class="ddd">We're Creative</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
                         </div>
-                        <!-- /features content -->
-
                     </div>
                 </div>
+                <!-- End About item -->
 
-                <div class="item">
-                    <div class="features-item">
-
-                        <!-- features media -->
-                        <div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
-                            <img src="{{ asset('meghna2/img/blog/3D-beach-art.jpg') }}" alt="3D Beach Art | Meghna" class="img-responsive">
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+                    <div class="wrap-about">
+                        <div class="icon-box">
+                            <i class="fa fa-users fa-4x"></i>
                         </div>
-                        <!-- /features media -->
-
-                        <!-- features content -->
-                        <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h3>Main Features of Meghna</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-                            <a href="#" class="btn btn-transparent">Learn More</a>
-                            <a href="#" class="btn btn-transparent">Purchase Theme</a>
+                        <!-- Express About Yourself -->
+                        <div class="about-content text-center">
+                            <h3>We're Professional</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
                         </div>
-                        <!-- /features content -->
-
                     </div>
                 </div>
-            </div>
-            <!-- /features item -->
+                <!-- End About item -->
 
-        </div> 		<!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="wrap-about kill-margin-bottom">
+                        <div class="icon-box">
+                            <i class="fa fa-users fa-4x"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="about-content text-center">
+                            <h3>We're Professional</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End About item -->
+
+            </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+    </section>
+
+
+
+    <section id="main-features">
+        <div class="container">
+            <div class="row">
+
+                <!-- features item -->
+                <div id="features">
+                    <div class="item">
+
+                        <div class="features-item">
+
+                            <!-- features media -->
+                            <div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
+                                <iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
+                            </div>
+                            <!-- /features media -->
+
+                            <!-- features content -->
+                            <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <h3>Main Features of Meghna</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+                                <a href="#" class="btn btn-transparent">Learn More</a>
+                                <a href="#" class="btn btn-transparent">Purchase Theme</a>
+                            </div>
+                            <!-- /features content -->
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="features-item">
+
+                            <!-- features media -->
+                            <div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+                                <img src="{{ asset('meghna2/img/blog/3D-beach-art.jpg') }}" alt="3D Beach Art | Meghna" class="img-responsive">
+                            </div>
+                            <!-- /features media -->
+
+                            <!-- features content -->
+                            <div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                                <h3>Main Features of Meghna</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
+                                <a href="#" class="btn btn-transparent">Learn More</a>
+                                <a href="#" class="btn btn-transparent">Purchase Theme</a>
+                            </div>
+                            <!-- /features content -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /features item -->
+
+            </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+    </section>
+@endif()
+
 
 <!--
 Start Counter Section
@@ -715,173 +713,173 @@ Start Counter Section
 </section>   <!-- End section -->
 
 
-<!-- Start Twitter Feed
-=========================================== -->
+{{--<!-- Start Twitter Feed--}}
+{{--=========================================== -->--}}
 
-<section id="twitter-feed" class="parallax-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
+{{--<section id="twitter-feed" class="parallax-section">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-12 text-center">--}}
 
-                <!-- twitter bird -->
-                <div class="twitter-bird wow fadeInDown" data-wow-duration="500ms">
-							<span>
-								<i class="fa fa-twitter fa-4x"></i>
-							</span>
-                </div>
-                <!-- /twitter bird -->
+                {{--<!-- twitter bird -->--}}
+                {{--<div class="twitter-bird wow fadeInDown" data-wow-duration="500ms">--}}
+							{{--<span>--}}
+								{{--<i class="fa fa-twitter fa-4x"></i>--}}
+							{{--</span>--}}
+                {{--</div>--}}
+                {{--<!-- /twitter bird -->--}}
 
-                <!-- fetching tweet -->
-                <div class="tweet wow fadeIn" data-wow-duration="2000ms"></div>
-                <!-- /fetching tweet -->
+                {{--<!-- fetching tweet -->--}}
+                {{--<div class="tweet wow fadeIn" data-wow-duration="2000ms"></div>--}}
+                {{--<!-- /fetching tweet -->--}}
 
-                <!-- follow us button -->
-                <a href="https://twitter.com/amimorshed" title="Follow Us" target="_blank" class="btn btn-transparent wow fadeInUp" data-wow-duration="500ms">Follow Us</a>
-                <!-- /follow us button -->
+                {{--<!-- follow us button -->--}}
+                {{--<a href="https://twitter.com/amimorshed" title="Follow Us" target="_blank" class="btn btn-transparent wow fadeInUp" data-wow-duration="500ms">Follow Us</a>--}}
+                {{--<!-- /follow us button -->--}}
 
-            </div>
-        </div>       <!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
+            {{--</div>--}}
+        {{--</div>       <!-- End row -->--}}
+    {{--</div>   	<!-- End container -->--}}
+{{--</section>   <!-- End section -->--}}
 
-<!-- Start Pricing section
-=========================================== -->
+{{--<!-- Start Pricing section--}}
+{{--=========================================== -->--}}
 
-<section id="pricing" class="bg-one">
-    <div class="container">
-        <div class="row">
+{{--<section id="pricing" class="bg-one">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
 
-            <!-- section title -->
-            <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
-                <h2>Our Greatest<span class="color"> Plans</span></h2>
-                <div class="border"></div>
-            </div>
-            <!-- /section title -->
+            {{--<!-- section title -->--}}
+            {{--<div class="title text-center wow fadeInDown" data-wow-duration="500ms">--}}
+                {{--<h2>Our Greatest<span class="color"> Plans</span></h2>--}}
+                {{--<div class="border"></div>--}}
+            {{--</div>--}}
+            {{--<!-- /section title -->--}}
 
-            <!-- single pricing table -->
-            <article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">
-                <div class="pricing">
+            {{--<!-- single pricing table -->--}}
+            {{--<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="200ms">--}}
+                {{--<div class="pricing">--}}
 
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Free</h3>
-                        <p>From <strong class="value">$99</strong> month</p>
-                    </div>
-                    <!-- /plan name & value -->
+                    {{--<!-- plan name & value -->--}}
+                    {{--<div class="price-title">--}}
+                        {{--<h3>Free</h3>--}}
+                        {{--<p>From <strong class="value">$99</strong> month</p>--}}
+                    {{--</div>--}}
+                    {{--<!-- /plan name & value -->--}}
 
-                    <!-- plan description -->
-                    <ul>
-                        <li>1GB Disk Space</li>
-                        <li>10 Email Account</li>
-                        <li>Script Installer</li>
-                        <li>1 GB Storage</li>
-                        <li>10 GB Bandwidth</li>
-                        <li>24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
+                    {{--<!-- plan description -->--}}
+                    {{--<ul>--}}
+                        {{--<li>1GB Disk Space</li>--}}
+                        {{--<li>10 Email Account</li>--}}
+                        {{--<li>Script Installer</li>--}}
+                        {{--<li>1 GB Storage</li>--}}
+                        {{--<li>10 GB Bandwidth</li>--}}
+                        {{--<li>24/7 Tech Support</li>--}}
+                    {{--</ul>--}}
+                    {{--<!-- /plan description -->--}}
 
-                    <!-- signup button -->
-                    <a class="btn btn-transparent" href="#">Signup</a>
-                    <!-- /signup button -->
+                    {{--<!-- signup button -->--}}
+                    {{--<a class="btn btn-transparent" href="#">Signup</a>--}}
+                    {{--<!-- /signup button -->--}}
 
-                </div>
-            </article>
-            <!-- end single pricing table -->
+                {{--</div>--}}
+            {{--</article>--}}
+            {{--<!-- end single pricing table -->--}}
 
-            <!-- single pricing table -->
-            <article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-                <div class="pricing">
+            {{--<!-- single pricing table -->--}}
+            {{--<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">--}}
+                {{--<div class="pricing">--}}
 
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Silver</h3>
-                        <p>From <strong class="value">$149</strong> month</p>
-                    </div>
-                    <!-- /plan name & value -->
+                    {{--<!-- plan name & value -->--}}
+                    {{--<div class="price-title">--}}
+                        {{--<h3>Silver</h3>--}}
+                        {{--<p>From <strong class="value">$149</strong> month</p>--}}
+                    {{--</div>--}}
+                    {{--<!-- /plan name & value -->--}}
 
-                    <!-- plan description -->
-                    <ul>
-                        <li>1GB Disk Space</li>
-                        <li>10 Email Account</li>
-                        <li>Script Installer</li>
-                        <li>1 GB Storage</li>
-                        <li>10 GB Bandwidth</li>
-                        <li>24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
+                    {{--<!-- plan description -->--}}
+                    {{--<ul>--}}
+                        {{--<li>1GB Disk Space</li>--}}
+                        {{--<li>10 Email Account</li>--}}
+                        {{--<li>Script Installer</li>--}}
+                        {{--<li>1 GB Storage</li>--}}
+                        {{--<li>10 GB Bandwidth</li>--}}
+                        {{--<li>24/7 Tech Support</li>--}}
+                    {{--</ul>--}}
+                    {{--<!-- /plan description -->--}}
 
-                    <!-- signup button -->
-                    <a class="btn btn-transparent" href="#">Signup</a>
-                    <!-- /signup button -->
+                    {{--<!-- signup button -->--}}
+                    {{--<a class="btn btn-transparent" href="#">Signup</a>--}}
+                    {{--<!-- /signup button -->--}}
 
-                </div>
-            </article>
-            <!-- end single pricing table -->
+                {{--</div>--}}
+            {{--</article>--}}
+            {{--<!-- end single pricing table -->--}}
 
-            <!-- single pricing table -->
-            <article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-                <div class="pricing">
+            {{--<!-- single pricing table -->--}}
+            {{--<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">--}}
+                {{--<div class="pricing">--}}
 
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Gold</h3>
-                        <p>From <strong class="value">$199</strong> month</p>
-                    </div>
-                    <!-- /plan name & value -->
+                    {{--<!-- plan name & value -->--}}
+                    {{--<div class="price-title">--}}
+                        {{--<h3>Gold</h3>--}}
+                        {{--<p>From <strong class="value">$199</strong> month</p>--}}
+                    {{--</div>--}}
+                    {{--<!-- /plan name & value -->--}}
 
-                    <!-- plan description -->
-                    <ul>
-                        <li>1GB Disk Space</li>
-                        <li>10 Email Account</li>
-                        <li>Script Installer</li>
-                        <li>1 GB Storage</li>
-                        <li>10 GB Bandwidth</li>
-                        <li>24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
+                    {{--<!-- plan description -->--}}
+                    {{--<ul>--}}
+                        {{--<li>1GB Disk Space</li>--}}
+                        {{--<li>10 Email Account</li>--}}
+                        {{--<li>Script Installer</li>--}}
+                        {{--<li>1 GB Storage</li>--}}
+                        {{--<li>10 GB Bandwidth</li>--}}
+                        {{--<li>24/7 Tech Support</li>--}}
+                    {{--</ul>--}}
+                    {{--<!-- /plan description -->--}}
 
-                    <!-- signup button -->
-                    <a class="btn btn-transparent" href="#">Signup</a>
-                    <!-- /signup button -->
+                    {{--<!-- signup button -->--}}
+                    {{--<a class="btn btn-transparent" href="#">Signup</a>--}}
+                    {{--<!-- /signup button -->--}}
 
-                </div>
-            </article>
-            <!-- end single pricing table -->
+                {{--</div>--}}
+            {{--</article>--}}
+            {{--<!-- end single pricing table -->--}}
 
-            <!-- single pricing table -->
-            <article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="750ms">
-                <div class="pricing kill-margin-bottom">
+            {{--<!-- single pricing table -->--}}
+            {{--<article class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="750ms">--}}
+                {{--<div class="pricing kill-margin-bottom">--}}
 
-                    <!-- plan name & value -->
-                    <div class="price-title">
-                        <h3>Platinum</h3>
-                        <p>From <strong class="value">$299</strong> month</p>
-                    </div>
-                    <!-- /plan name & value -->
+                    {{--<!-- plan name & value -->--}}
+                    {{--<div class="price-title">--}}
+                        {{--<h3>Platinum</h3>--}}
+                        {{--<p>From <strong class="value">$299</strong> month</p>--}}
+                    {{--</div>--}}
+                    {{--<!-- /plan name & value -->--}}
 
-                    <!-- plan description -->
-                    <ul>
-                        <li>1GB Disk Space</li>
-                        <li>10 Email Account</li>
-                        <li>Script Installer</li>
-                        <li>1 GB Storage</li>
-                        <li>10 GB Bandwidth</li>
-                        <li>24/7 Tech Support</li>
-                    </ul>
-                    <!-- /plan description -->
+                    {{--<!-- plan description -->--}}
+                    {{--<ul>--}}
+                        {{--<li>1GB Disk Space</li>--}}
+                        {{--<li>10 Email Account</li>--}}
+                        {{--<li>Script Installer</li>--}}
+                        {{--<li>1 GB Storage</li>--}}
+                        {{--<li>10 GB Bandwidth</li>--}}
+                        {{--<li>24/7 Tech Support</li>--}}
+                    {{--</ul>--}}
+                    {{--<!-- /plan description -->--}}
 
-                    <!-- signup button -->
-                    <a class="btn btn-transparent" href="#">Signup</a>
-                    <!-- /signup button -->
+                    {{--<!-- signup button -->--}}
+                    {{--<a class="btn btn-transparent" href="#">Signup</a>--}}
+                    {{--<!-- /signup button -->--}}
 
-                </div>
-            </article>
-            <!-- end single pricing table -->
+                {{--</div>--}}
+            {{--</article>--}}
+            {{--<!-- end single pricing table -->--}}
 
 
-        </div>       <!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
+        {{--</div>       <!-- End row -->--}}
+    {{--</div>   	<!-- End container -->--}}
+{{--</section>   <!-- End section -->--}}
 
 
 <!-- Start Testimonial
@@ -992,102 +990,102 @@ Start Counter Section
 </section>    <!-- End Section -->
 
 
-<!--
-Start Blog Section
-=========================================== -->
+{{--<!----}}
+{{--Start Blog Section--}}
+{{--=========================================== -->--}}
 
-<section id="blog" class="bg-one">
-    <div class="container">
-        <div class="row">
+{{--<section id="blog" class="bg-one">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
 
-            <!-- section title -->
-            <div class="title text-center wow fadeInDown">
-                <h2> Latest <span class="color">Posts</span></h2>
-                <div class="border"></div>
-            </div>
-            <!-- /section title -->
+            {{--<!-- section title -->--}}
+            {{--<div class="title text-center wow fadeInDown">--}}
+                {{--<h2> Latest <span class="color">Posts</span></h2>--}}
+                {{--<div class="border"></div>--}}
+            {{--</div>--}}
+            {{--<!-- /section title -->--}}
 
-            <div class="clearfix">
+            {{--<div class="clearfix">--}}
 
-                <!-- single blog post -->
-                <article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">
-                    <div class="note">
-                        <div class="media-wrapper">
-                            <img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">
-                        </div>
+                {{--<!-- single blog post -->--}}
+                {{--<article class="col-md-3 col-sm-6 col-xs-12 clearfix wow fadeInUp" data-wow-duration="500ms">--}}
+                    {{--<div class="note">--}}
+                        {{--<div class="media-wrapper">--}}
+                            {{--<img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">--}}
+                        {{--</div>--}}
 
-                        <div class="excerpt">
-                            <h3>Simple Image Post</h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- /single blog post -->
+                        {{--<div class="excerpt">--}}
+                            {{--<h3>Simple Image Post</h3>--}}
+                            {{--<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>--}}
+                            {{--<a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</article>--}}
+                {{--<!-- /single blog post -->--}}
 
-                <!-- single blog post -->
-                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-                    <div class="note">
-                        <div id="gallery-post" class="media-wrapper">
-                            <div class="item">
-                                <img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">
-                            </div>
-                            <div class="item">
-                                <img src="{{ asset('meghna2/img/blog/bicycle.jpg') }}" alt="Flying bicycle" class="img-responsive">
-                            </div>
-                            <div class="item">
-                                <img src="{{ asset('meghna2/img/blog/3D-beach-art.jpg') }}" alt="3D Beach Art | Meghna" class="img-responsive">
-                            </div>
-                        </div>
+                {{--<!-- single blog post -->--}}
+                {{--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">--}}
+                    {{--<div class="note">--}}
+                        {{--<div id="gallery-post" class="media-wrapper">--}}
+                            {{--<div class="item">--}}
+                                {{--<img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">--}}
+                            {{--</div>--}}
+                            {{--<div class="item">--}}
+                                {{--<img src="{{ asset('meghna2/img/blog/bicycle.jpg') }}" alt="Flying bicycle" class="img-responsive">--}}
+                            {{--</div>--}}
+                            {{--<div class="item">--}}
+                                {{--<img src="{{ asset('meghna2/img/blog/3D-beach-art.jpg') }}" alt="3D Beach Art | Meghna" class="img-responsive">--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="excerpt">
-                            <h3>Simple Slider Post</h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- end single blog post -->
+                        {{--<div class="excerpt">--}}
+                            {{--<h3>Simple Slider Post</h3>--}}
+                            {{--<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>--}}
+                            {{--<a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</article>--}}
+                {{--<!-- end single blog post -->--}}
 
-                <!-- single blog post -->
-                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-                    <div class="note">
-                        <div class="media-wrapper">
-                            <img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">
-                        </div>
+                {{--<!-- single blog post -->--}}
+                {{--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">--}}
+                    {{--<div class="note">--}}
+                        {{--<div class="media-wrapper">--}}
+                            {{--<img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">--}}
+                        {{--</div>--}}
 
-                        <div class="excerpt">
-                            <h3>Simple Image Post</h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- end single blog post -->
+                        {{--<div class="excerpt">--}}
+                            {{--<h3>Simple Image Post</h3>--}}
+                            {{--<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>--}}
+                            {{--<a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</article>--}}
+                {{--<!-- end single blog post -->--}}
 
-                <!-- single blog post -->
-                <article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-                    <div class="note kill-margin-bottom">
-                        <div class="media-wrapper">
-                            <img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">
-                        </div>
-                        <div class="excerpt">
-                            <h3>Simple Image Post</h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- end single blog post -->
-            </div>
+                {{--<!-- single blog post -->--}}
+                {{--<article class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">--}}
+                    {{--<div class="note kill-margin-bottom">--}}
+                        {{--<div class="media-wrapper">--}}
+                            {{--<img src="{{ asset('meghna2/img/blog/amazing-caves-coverimage.jpg') }}" alt="amazing caves coverimage" class="img-responsive">--}}
+                        {{--</div>--}}
+                        {{--<div class="excerpt">--}}
+                            {{--<h3>Simple Image Post</h3>--}}
+                            {{--<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non skateboard dolor brunch.</p>--}}
+                            {{--<a class="btn btn-transparent" href="{{ asset('meghna2/single-post.html') }}">Read more</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</article>--}}
+                {{--<!-- end single blog post -->--}}
+            {{--</div>--}}
 
-            <div class="all-post text-center">
-                <a class="btn btn-transparent" href="{{ asset('meghna2/blog.html') }}">View All Post</a>
-            </div>
+            {{--<div class="all-post text-center">--}}
+                {{--<a class="btn btn-transparent" href="{{ asset('meghna2/blog.html') }}">View All Post</a>--}}
+            {{--</div>--}}
 
-        </div> <!-- end row -->
-    </div> <!-- end container -->
-</section> <!-- end section -->
+        {{--</div> <!-- end row -->--}}
+    {{--</div> <!-- end container -->--}}
+{{--</section> <!-- end section -->--}}
 
 <!-- Srart Contact Us
 =========================================== -->
