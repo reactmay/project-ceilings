@@ -106,7 +106,7 @@ Welcome Slider
                             <div>
                                 <h2 class="heading animated fadeInDown">Высокое качество</h2>
                                 <h3 class="animated fadeInUp">Универсальный дизайн</h3>
-                                <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
+                                <a class="btn btn-green animated fadeInUp" href="#">Заинтересовало</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ Welcome Slider
                         <div>
                             <h2 class="heading animated fadeInDown">Замер в удобное для вас время</h2>
                             <h3 class="animated fadeInUp">Все для дорогих клиентов</h3>
-                            <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
+                            <a class="btn btn-green animated fadeInUp" href="#">Заинтересовало</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ Welcome Slider
                         <div>
                             <h2 class="heading animated fadeInRight">Большой каталог цветов</h2>
                             <h3 class="animated fadeInLeft">В разных тонах</h3>
-                            <a class="btn btn-green animated fadeInUp" href="#about">Заинтересовало</a>
+                            <a class="btn btn-green animated fadeInUp" href="#">Заинтересовало</a>
                         </div>
                     </div>
                 </div>

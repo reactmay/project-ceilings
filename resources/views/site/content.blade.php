@@ -1127,7 +1127,7 @@ Start Counter Section
                 <!-- copyright -->
                 <div class="copyright text-center">
                     <a href="{{ asset('meghna2/index.html') }}">
-                        <img src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna" />
+                        <img src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna"  height="40" width="110"/>
                     </a>
                     <br />
 
