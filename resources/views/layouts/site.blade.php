@@ -84,19 +84,19 @@ Welcome Slider
     <div id="slitSlider" class="sl-slider-wrapper">
         <div class="sl-slider">
 
-            {{--<!-- single slide item -->--}}
-            {{--<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">--}}
-                {{--<div class="sl-slide-inner">--}}
-                    {{--<div class="bg-img bg-img-1"></div>--}}
-                    {{--<div class="carousel-caption">--}}
-                        {{--<div>--}}
-                            {{--<img class="wow fadeInUp" src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna">--}}
-                            {{--<h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Натяжные потолки</h2>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<!-- /single slide item -->--}}
+            <!-- single slide item -->
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="bg-img bg-img-3"></div>
+                    <div class="carousel-caption">
+                        <div>
+                            <img class="wow fadeInUp" src="{{ asset('meghna2/img/logo.png') }}" alt="Meghna">
+                            <h2 data-wow-duration="500ms"  data-wow-delay="500ms" class="heading animated fadeInRight">Натяжные потолки</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /single slide item -->
 
             <!-- single slide item -->
                 <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
@@ -128,20 +128,20 @@ Welcome Slider
             </div>
             <!-- /single slide item -->
 
-            <!-- single slide item -->
-            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                <div class="sl-slide-inner">
-                    <div class="bg-img bg-img-3"></div>
-                    <div class="carousel-caption">
-                        <div>
-                            <h2 class="heading animated fadeInRight">Большой каталог цветов</h2>
-                            <h3 class="animated fadeInLeft">В разных тонах</h3>
-                            <a class="btn btn-green animated fadeInUp" href="#">Заинтересовало</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /single slide item -->
+            {{--<!-- single slide item -->--}}
+            {{--<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">--}}
+                {{--<div class="sl-slide-inner">--}}
+                    {{--<div class="bg-img bg-img-3"></div>--}}
+                    {{--<div class="carousel-caption">--}}
+                        {{--<div>--}}
+                            {{--<h2 class="heading animated fadeInRight">Большой каталог цветов</h2>--}}
+                            {{--<h3 class="animated fadeInLeft">В разных тонах</h3>--}}
+                            {{--<a class="btn btn-green animated fadeInUp" href="#">Заинтересовало</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<!-- /single slide item -->--}}
 
         </div><!-- /sl-slider -->
 
