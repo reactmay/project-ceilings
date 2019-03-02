@@ -80,8 +80,23 @@ End Preloader
 Welcome Slider
 ==================================== -->
 <section id="home">
+    @if(session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif()
 
+    @if(count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif()
     <div id="slitSlider" class="sl-slider-wrapper">
+
         <div class="sl-slider">
 
             <!-- single slide item -->

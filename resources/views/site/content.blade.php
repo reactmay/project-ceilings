@@ -1052,26 +1052,25 @@ Start Counter Section
 
             <!-- Contact Form -->
             <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                <form id="contact-form" method="post" action="sendmail.php" role="form">
-
+                <form action="{{ route('home') }}" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя" class="form-control" name="name" id="name">
+                        <input type="text" placeholder="Ваше имя" class="form-control" name="name" id="name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Ваш номер телефона" class="form-control" name="phone" id="phone">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-control" name="phone" id="phone" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" placeholder="Ваш E-mail" class="form-control" name="email" id="email">
+                        <input type="email" placeholder="Ваш E-mail (необязательно)" class="form-control" name="email" id="email">
                     </div>
 
-                    <div class="form-group">
-                        <input type="text" placeholder="Заголовок" class="form-control" name="subject" id="subject">
-                    </div>
+                    {{--<div class="form-group">--}}
+                        {{--<input type="text" placeholder="Заголовок" class="form-control" name="subject" id="subject">--}}
+                    {{--</div>--}}
 
                     <div class="form-group">
-                        <textarea rows="6" placeholder="Сообщение" class="form-control" name="message" id="message"></textarea>
+                        <textarea rows="6" placeholder="Сообщение" class="form-control" name="message" id="message" required></textarea>
                     </div>
 
                     <div id="mail-success" class="success">
@@ -1082,9 +1081,11 @@ Start Counter Section
                         Sorry, don't know what happened. Try later :(
                     </div>
 
-                    <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">
-                    </div>
+                    {{--<div id="cf-submit">--}}
+                        {{--<input type="submit" id="contact-submit" class="btn btn-transparent" value="Отправить">--}}
+                    {{--</div>--}}
+                    <input type="submit" class="btn btn-transparent" value="Отправить">
+                    {{ csrf_field() }}
 
                 </form>
             </div>

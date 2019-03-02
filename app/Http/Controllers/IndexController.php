@@ -8,9 +8,41 @@ use App\Portfolio;
 use App\People;
 use App\Service;
 
+use Illuminate\Support\Facades\Mail;
+
 class IndexController extends Controller
 {
-    public function execute(Request $request) {
+    public function execute(Request $request)
+    {
+
+        if ($request->isMethod('post')) {
+
+            $messages = [
+                'required' => 'Поле :attribute обязательно к заполнению',
+                'phone' => 'Поле :attribute обязательно к заполнению'
+            ];
+
+            $this->validate($request, [
+                'name' => 'required|max:255',
+                'phone' => 'required',
+                'message' => 'required'
+            ], $messages);
+
+            $data = $request->all();
+
+            $result = Mail::send('site.email', ['data' => $data], function ($message) use ($data) {
+                $mail_admin = env('MAIL_ADMIN');
+                $message->from($mail_admin, 'Заказ с вашего сайта');
+                $message->to($mail_admin)->subject('НАТЯЖНЫЕ ПОТОЛКИ');
+            });
+
+            // mail
+            if ($result) {
+                return redirect()->route('home')->with('status', 'Ваше письмо отправлено, ожидайте звонка');
+            }
+
+
+        }
 
         $pages = Page::all();
         $portfolios = Portfolio::get(array('name', 'filter', 'images'));
