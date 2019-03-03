@@ -59,8 +59,6 @@
         </div>   	<!-- End container -->
     </section>
 
-
-
     <section id="main-features">
         <div class="container">
             <div class="row">
@@ -95,11 +93,6 @@
         </div>   	<!-- End container -->
     </section>
 @endif()
-
-
-<!--
-Start Counter Section
-==================================== -->
 
 <section id="counter" class="parallax-section">
     <div class="container">
@@ -158,260 +151,79 @@ Start Counter Section
             <!-- end third count item -->
         </div> 		<!-- end row -->
     </div>   	<!-- end container -->
-</section>   <!-- end section -->
+</section>
 
-
-<!-- Start Services Section
-==================================== -->
-
-<section id="services" class="bg-one">
-    <div class="container">
-        <div class="row">
-
-            <!-- section title -->
-            <div class="title text-center wow fadeIn" data-wow-duration="500ms">
-                <h2>Мы <span class="color">предлагаем</span></h2>
-                <div class="border"></div>
-            </div>
-            <!-- /section title -->
-
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-wordpress fa-5x"></i>
+@if(isset($services) && is_object($services))
+    <section id="services" class="bg-one">
+        <div class="container">
+            @foreach($services as $k => $service)
+                @if($k == 0 || $k % 3 == 0)
+                    <div class="row">
+                @endif
+                <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="{{ ($k % 3 > 0) ? '600ms' : '300ms'}}">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa fa-{{ $service->icon }} fa-5x"></i>
+                        </div>
+                        <h3>{{ $service->name }}</h3>
+                        <p>{{ $service->text }}</p>
                     </div>
-                    <h3>Огромный каталог цветов</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
-
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-desktop fa-5x"></i>
+                </article>
+                @if(($k + 1) % 3 == 0)
                     </div>
-                    <h3>Высокое качество продукции</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
+                @endif
+            @endforeach
+        </div>
+    </section>
+@endif
 
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-play fa-5x"></i>
-                    </div>
-                    <h3>Доступные цены</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
-
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-eye fa-5x"></i>
-                    </div>
-                    <h3>Монтаж</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
-
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-android fa-5x"></i>
-                    </div>
-                    <h3>Эксклюзив</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
-
-            <!-- Single Service Item -->
-            <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                <div class="service-block text-center kill-margin-bottom">
-                    <div class="service-icon text-center">
-                        <i class="fa fa-link fa-5x"></i>
-                    </div>
-                    <h3>Потолки с рисунком</h3>
-                    <p>Здесь ваш текст</p>
-                </div>
-            </article>
-            <!-- End Single Service Item -->
-
-        </div> 		<!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
-
-
-<!-- Start Portfolio Section
-=========================================== -->
-
-<section id="showcase">
+@if(isset($portfolios) && is_object($portfolios))
+    <section id="showcase">
     <div class="container">
         <div class="row wow fadeInDown" data-wow-duration="500ms">
             <div class="col-lg-12">
 
-                <!-- section title -->
                 <div class="title text-center">
                     <h2>Наши <span class="color">проекты</span></h2>
                     <div class="border"></div>
                 </div>
-                <!-- /section title -->
 
-                <!-- portfolio item filtering -->
-                <div class="portfolio-filter clearfix">
-                    <ul class="text-center">
-                        <li><a href="javascript:void(0)" class="filter" data-filter="all">Все</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".test1">Обычный 1(тест)</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".test2">Обычный 2 (тест)</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".test3">Обычный 3 (тест)</a></li>
-                        <li><a href="javascript:void(0)" class="filter" data-filter=".test4">Обычный 4 (тест)</a></li>
-                    </ul>
-                </div>
-                <!-- /portfolio item filtering -->
+                @if(isset($tags))
+                    <div class="portfolio-filter clearfix">
+                        <ul class="text-center">
+                            <li><a href="javascript:void(0)" class="filter" data-filter="all">Все</a></li>
+                            @foreach($tags as $tag)
+                                <li><a href="javascript:void(0)" class="filter" data-filter=".{{ $tag }}">{{ $tag }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-            </div> <!-- /end col-lg-12 -->
-        </div> <!-- end row -->
-    </div>	<!-- end container -->
+            </div>
+        </div>
+    </div>
 
-    <!-- portfolio items -->
     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
         <ul id="og-grid" class="og-grid">
-
-            <!-- single portfolio item -->
-            <li class="mix test1">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/1.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/1.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
+            @foreach($portfolios as $item)
+                <li class="mix {{ $item->filter }}">
+                    <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/1.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
+                        {{--<img src="{{ asset('meghna2/img/portfolio/1.jpg') }}" alt="Meghna" height="650" width="520">--}}
+                        {{ Html::image('meghna2/img/portfolio/'.$item->images, $item->name) }}
+                        <div class="hover-mask">
+                            <h3>{{ $item->name }}</h3>
+                            <span>
                             <i class="fa fa-plus fa-2x"></i>
                         </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
+                        </div>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 
-
-            <!-- single portfolio item -->
-            <li class="mix test1">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/2.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/2.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-            <!-- single portfolio item -->
-            <li class="mix test2">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/3.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/3.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-
-            <!-- single portfolio item -->
-            <li class="mix test2">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/4.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/4.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-
-            <!-- single portfolio item -->
-            <li class="mix test3">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/5.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/5.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-
-            <!-- single portfolio item -->
-            <li class="mix test3">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/6.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/6.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-
-            <!-- single portfolio item -->
-            <li class="mix test4">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/7.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/7.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-
-
-            <!-- single portfolio item -->
-            <li class="mix test4">
-                <a href="javascript:void(0)" data-largesrc="{{ asset('meghna2/img/portfolio/8.jpg') }}" data-title="Тут ваше название" data-description="Здесь ваше описание.">
-                    <img src="{{ asset('meghna2/img/portfolio/8.jpg') }}" alt="Meghna" height="650" width="520">
-                    <div class="hover-mask">
-                        <h3>Тут ваше название</h3>
-                        <span>
-                            <i class="fa fa-plus fa-2x"></i>
-                        </span>
-                    </div>
-                </a>
-            </li>
-            <!-- /single portfolio item -->
-        </ul> <!-- end og grid -->
-    </div>  <!-- portfolio items wrapper -->
-
-</section>   <!-- End section -->
-
-
-<!-- Start Team Skills
-=========================================== -->
+</section>
+@endif
 
 <section id="team-skills" class="parallax-section">
     <div class="container">
@@ -474,171 +286,52 @@ Start Counter Section
 
         </div>  		<!-- End row -->
     </div>   	<!-- End container -->
-</section>   <!-- End section -->
+</section>
 
-<!-- Start Our Team
-=========================================== -->
-
-<section id="our-team">
+@if(isset($peoples) && is_object($peoples))
+    <section id="our-team">
     <div class="container">
         <div class="row">
 
-            <!-- section title -->
             <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
                 <h2>Наша <span class="color">Команда</span></h2>
                 <div class="border"></div>
             </div>
-            <!-- /section title -->
 
-            <!-- team member -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
-                <article class="team-mate">
-                    <div class="member-photo">
-                        <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
-                        <!-- /member photo -->
+            @foreach($peoples as $k => $people)
+                <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
+                    <article class="team-mate">
+                        <div class="member-photo">
+                            <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
 
-                        <!-- member social profile -->
-                        <div class="mask">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
+                            {{--<div class="mask">--}}
+                                {{--<ul class="clearfix">--}}
+                                    {{--<li><a href="#"><i class="fa fa-facebook"></i></a></li>--}}
+                                    {{--<li><a href="#"><i class="fa fa-twitter"></i></a></li>--}}
+                                    {{--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>--}}
+                                    {{--<li><a href="#"><i class="fa fa-dribbble"></i></a></li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+
                         </div>
-                        <!-- /member social profile -->
-                    </div>
 
-                    <!-- member name & designation -->
-                    <div class="member-title">
-                        <h3>Иван</h3>
-                        <span>Должность или позиция</span>
-                    </div>
-                    <!-- /member name & designation -->
-
-                    <!-- about member -->
-                    <div class="member-info">
-                        <p>Описание .....</p>
-                    </div>
-                    <!-- /about member -->
-
-                </article>
-            </div>
-            <!-- end team member -->
-
-            <!-- team member -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-                <article class="team-mate">
-                    <div class="member-photo">
-                        <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
-                        <!-- /member photo -->
-
-                        <!-- member social profile -->
-                        <div class="mask">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
+                        <div class="member-title">
+                            <h3>{{ $people->name }}</h3>
+                            <span>{{ $people->position }}</span>
                         </div>
-                        <!-- /member social profile -->
-                    </div>
 
-                    <!-- member name & designation -->
-                    <div class="member-title">
-                        <h3>Александр</h3>
-                        <span>Должность или позиция</span>
-                    </div>
-                    <!-- /member name & designation -->
-
-                    <!-- about member -->
-                    <div class="member-info">
-                        <p>Описание .....</p>
-                    </div>
-                    <!-- /about member -->
-                </article>
-            </div>
-            <!-- end team member -->
-
-            <!-- team member -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-                <article class="team-mate">
-                    <div class="member-photo">
-                        <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
-                        <!-- /member photo -->
-
-                        <!-- member social profile -->
-                        <div class="mask">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
+                        <div class="member-info">
+                            <p>{{ $people->text }}</p>
                         </div>
-                        <!-- /member social profile -->
-                    </div>
 
-                    <!-- member name & designation -->
-                    <div class="member-title">
-                        <h3>Артем</h3>
-                        <span>Должность или позиция</span>
-                    </div>
-                    <!-- /member name & designation -->
+                    </article>
+                </div>
+            @endforeach
 
-                    <!-- about member -->
-                    <div class="member-info">
-                        <p>Описание .....</p>
-                    </div>
-                    <!-- /about member -->
-                </article>
-            </div>
-            <!-- end team member -->
-
-            <!-- team member -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                <article class="team-mate kill-margin-bottom">
-                    <div class="member-photo">
-                        <!-- member photo -->
-                        <img class="img-responsive" src="{{ asset('meghna2/img/team/1.jpg') }}" alt="Meghna" height="280" width="280">
-                        <!-- /member photo -->
-
-                        <!-- member social profile -->
-                        <div class="mask">
-                            <ul class="clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- /member social profile -->
-                    </div>
-
-                    <!-- member name & designation -->
-                    <div class="member-title">
-                        <h3>Олег</h3>
-                        <span>Должность или позиция</span>
-                    </div>
-                    <!-- /member name & designation -->
-
-                    <!-- about member -->
-                    <div class="member-info">
-                        <p>Описание .....</p>
-                    </div>
-                    <!-- /about member -->
-                </article>
-            </div>
-            <!-- end team member -->
-
-        </div>  	<!-- End row -->
-    </div>   	<!-- End container -->
-</section>   <!-- End section -->
-
+        </div>
+    </div>
+</section>
+@endif
 
 {{--<!-- Start Twitter Feed--}}
 {{--=========================================== -->--}}
@@ -914,8 +607,7 @@ Start Counter Section
             </div> 		<!-- end col lg 12 -->
         </div>	    <!-- End row -->
     </div>       <!-- End container -->
-</section>    <!-- End Section -->
-
+</section>
 
 {{--<!----}}
 {{--Start Blog Section--}}
@@ -1016,6 +708,7 @@ Start Counter Section
 
 <!-- Srart Contact Us
 =========================================== -->
+
 <section id="contact-us">
     <div class="container">
         <div class="row">
@@ -1100,10 +793,7 @@ Start Counter Section
     {{--</div>--}}
     {{--<!-- /Google Map -->--}}
 
-</section> <!-- end section -->
-
-<!-- end Contact Area
-========================================== -->
+</section>
 
 <footer id="footer" class="bg-one">
     <div class="container">
@@ -1139,13 +829,8 @@ Start Counter Section
             </div> <!-- end col lg 12 -->
         </div> <!-- end row -->
     </div> <!-- end container -->
-</footer> <!-- end footer -->
+</footer>
 
-<!-- Back to Top
-============================== -->
 <a href="javascript:;" id="scrollUp">
     <i class="fa fa-angle-up fa-2x"></i>
 </a>
-
-<!-- end Footer Area
-========================================== -->
