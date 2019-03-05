@@ -7,6 +7,7 @@ use App\Page;
 use App\Portfolio;
 use App\People;
 use App\Service;
+use App\Message;
 
 use Illuminate\Support\Facades\DB;
 
@@ -16,16 +17,24 @@ class IndexController extends Controller
 {
     public function execute(Request $request)
     {
-
         if ($request->isMethod('post')) {
 
             $data = $request->all();
 
-            Mail::send('site.email', ['data' => $data], function ($message) use ($data) {
-                $mail_admin = env('MAIL_ADMIN');
-                $message->from($mail_admin, 'Заказ с вашего сайта');
-                $message->to($mail_admin)->subject('НАТЯЖНЫЕ ПОТОЛКИ');
+            $mail_admin = DB::table('settings')->distinct()->pluck('mail_admin');
+            $mail_from = DB::table('settings')->distinct()->pluck('mail_from');
+
+            Mail::send('site.email', ['data' => $data], function ($message) use ($data, $mail_admin, $mail_from) {
+                $message->from($mail_from['0'], 'Заказ с вашего сайта');
+                $message->to($mail_admin['0'])->subject('НАТЯЖНЫЕ ПОТОЛКИ');
             });
+
+            Message::create([
+                'name' => $data['name'],
+                'phone' => $data['phone'],
+                'email' => $data['email'],
+                'message' => $data['message'],
+            ]);
 
         }
 

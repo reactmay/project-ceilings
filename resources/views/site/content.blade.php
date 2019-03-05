@@ -747,11 +747,11 @@
             <div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                 <form action="{{ route('home') }}" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя" class="form-control" name="name" id="name" required>
+                        <input type="text" placeholder="Ваше имя *" class="form-control" name="name" id="name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Ваш номер телефона" class="form-control" name="phone" id="phone" required>
+                        <input type="text" placeholder="Ваш номер телефона *" class="form-control" name="phone" id="phone" pattern="[0-9]{6,12}" required>
                     </div>
 
                     <div class="form-group">
@@ -763,7 +763,7 @@
                     {{--</div>--}}
 
                     <div class="form-group">
-                        <textarea rows="6" placeholder="Сообщение" class="form-control" name="message" id="message" required></textarea>
+                        <textarea rows="6" placeholder="Сообщение *" type="text"  maxlength="255" class="form-control" name="message" id="message" required></textarea>
                     </div>
 
                     <div id="mail-success" class="success">

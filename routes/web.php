@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
+
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
 
 Route::group([], function () {
     Route::match(['get', 'post'], '/', ['uses'=>'IndexController@execute', 'as'=>'home']);
@@ -21,12 +24,11 @@ Route::group([], function () {
 // admin
 Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
     // admin
-    Route::get('/', function () {
-        if(view()->exists('admin.index')) {
-            $data = ['title' => 'Панель администратора'];
+    Route::match(['get', 'post'], '/', ['uses'=>'AdminController@execute', 'as'=>'admin']);
 
-            return view(admin.index, $data);
-        }
+    Route::group(['prefix'=>'messages'], function () {
+        Route::get('/', ['uses'=>'AdminController@message_execute', 'as'=>'messages']);
+        Route::match(['get', 'post', 'delete'], '/edit/{message}', ['uses'=>'AdminController@message_edit_execute', 'as'=>'messagesEdit']);
     });
 
     Route::group(['prefix'=>'pages'], function () {
@@ -47,7 +49,5 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
         Route::match(['get', 'post', 'delete'], '/edit/{service}', ['uses'=>'ServiceEditController@execute', 'as'=>'serviceEdit']);
     });
 });
-
-Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
