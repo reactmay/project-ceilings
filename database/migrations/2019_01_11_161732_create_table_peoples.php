@@ -19,6 +19,7 @@ class CreateTablePeoples extends Migration
             $table->string('position', 150);
             $table->string('images', 100);
             $table->text('text');
+            $table->date('date_if_birth')->default('2019-03-05');
             $table->timestamps();
         });
     }

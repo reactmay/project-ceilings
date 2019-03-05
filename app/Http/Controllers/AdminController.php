@@ -89,4 +89,30 @@ class AdminController extends Controller
             return redirect('admin/messages');
         }
     }
+
+    public function people_execute()
+    {
+        if (view()->exists('admin.chunks.peoples.peoples')) {
+            $peoples = People::all();
+            $data = [
+                'title' => 'Команда',
+                'peoples' => $peoples,
+            ];
+            return view('admin.chunks.peoples.peoples', $data);
+        }
+        abort(404);
+    }
+
+    public function people_edit_execute()
+    {
+        if (view()->exists('admin.chunks.peoples.peoplesEdit')) {
+            $peoples = People::all();
+            $data = [
+                'title' => 'Редактирование карточки работника',
+                'peoples' => $peoples,
+            ];
+            return view('admin.chunks.peoples.peoplesEdit', $data);
+        }
+        abort(404);
+    }
 }

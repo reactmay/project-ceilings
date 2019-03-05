@@ -31,6 +31,11 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function () {
         Route::match(['get', 'post', 'delete'], '/edit/{message}', ['uses'=>'AdminController@message_edit_execute', 'as'=>'messagesEdit']);
     });
 
+    Route::group(['prefix'=>'peoples'], function () {
+        Route::get('/', ['uses'=>'AdminController@people_execute', 'as'=>'peoples']);
+        Route::match(['get', 'post', 'delete'], '/edit/{people}', ['uses'=>'AdminController@people_edit_execute', 'as'=>'peoplesEdit']);
+    });
+
     Route::group(['prefix'=>'pages'], function () {
         Route::get('/', ['uses'=>'PagesController@execute', 'as'=>'pages']);
         Route::match(['get', 'post'], '/add', ['uses'=>'PagesAddController@execute', 'as'=>'pagesAdd']);
