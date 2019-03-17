@@ -1,4 +1,4 @@
-@if(isset($pages) && is_object($pages))
+@if($show_aboutus['0'] == 1)
     <section id="about" class="bg-one">
         <div class="container">
             <div class="row">
@@ -92,7 +92,7 @@
             </div> 		<!-- End row -->
         </div>   	<!-- End container -->
     </section>
-@endif()
+@endif
 
 <section id="counter" class="parallax-section">
     <div class="container">
@@ -154,7 +154,8 @@
 </section>
 
 @if(isset($services) && is_object($services))
-    <section id="services" class="bg-one">
+    @if($show_service['0'] == 1)
+        <section id="services" class="bg-one">
         <div class="container">
             @foreach($services as $k => $service)
                 @if($k == 0 || $k % 3 == 0)
@@ -175,10 +176,12 @@
             @endforeach
         </div>
     </section>
+    @endif
 @endif
 
 @if(isset($portfolios) && is_object($portfolios))
-    <section id="showcase">
+    @if($show_portfolio['0'] == 1)
+        <section id="showcase">
     <div class="container">
         <div class="row wow fadeInDown" data-wow-duration="500ms">
             <div class="col-lg-12">
@@ -223,6 +226,7 @@
     </div>
 
 </section>
+    @endif
 @endif
 
 <section id="team-skills" class="parallax-section">
@@ -289,7 +293,8 @@
 </section>
 
 @if(isset($peoples) && is_object($peoples))
-    <section id="our-team">
+    @if($show_team['0'] == 1)
+        <section id="our-team">
     <div class="container">
         <div class="row">
 
@@ -331,6 +336,7 @@
         </div>
     </div>
 </section>
+    @endif
 @endif
 
 {{--<!-- Start Twitter Feed--}}
@@ -505,7 +511,8 @@
 <!-- Start Testimonial
 =========================================== -->
 
-<section id="testimonial" class="parallax-section">
+@if($show_testimonials['0'] == 1)
+    <section id="testimonial" class="parallax-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -608,6 +615,7 @@
         </div>	    <!-- End row -->
     </div>       <!-- End container -->
 </section>
+@endif
 
 {{--<!----}}
 {{--Start Blog Section--}}

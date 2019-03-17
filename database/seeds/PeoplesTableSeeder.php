@@ -13,13 +13,13 @@ class PeoplesTableSeeder extends Seeder
     public function run()
     {
         $seeds = [
-            ['John',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John1',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John2',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John3',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John4',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John5',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
-            ['John6',  'admin', 'member-1.jpg', 'text text text', '10.09.1994'],
+            ['John',  'admin', '700944389.png', 'text text text', '10.09.1994'],
+            ['John1',  'admin', '884989437.png', 'text text text', '10.09.1994'],
+            ['John2',  'admin', '8834439.png', 'text text text', '10.09.1994'],
+            ['John3',  'admin', '112893361.png', 'text text text', '10.09.1994'],
+            ['John4',  'admin', '283106060.png', 'text text text', '10.09.1994'],
+            ['John5',  'admin', '398797541.png', 'text text text', '10.09.1994'],
+            ['John6',  'admin', '81528509.png', 'text text text', '10.09.1994'],
         ];
 
         foreach($seeds as $seed){

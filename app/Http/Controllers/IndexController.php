@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Setting;
 use Illuminate\Http\Request;
 use App\Page;
 use App\Portfolio;
@@ -38,6 +39,12 @@ class IndexController extends Controller
 
         }
 
+        $show_service = DB::table('settings')->distinct()->pluck('show_service');
+        $show_portfolio = DB::table('settings')->distinct()->pluck('show_portfolio');
+        $show_aboutus = DB::table('settings')->distinct()->pluck('show_aboutus');
+        $show_team = DB::table('settings')->distinct()->pluck('show_team');
+        $show_testimonials = DB::table('settings')->distinct()->pluck('show_testimonials');
+
         $pages = Page::all();
         $portfolios = Portfolio::get(array('name', 'filter', 'images'));
         $services = Service::where('id', '<', 20)->get();
@@ -47,19 +54,30 @@ class IndexController extends Controller
 
         $menu = array();
 
-        foreach ($pages as $page) {
-            $item = array('title' => $page->name, 'alias' => $page->alias);
+        $item = array('title' => 'Главная', 'alias' => 'home');
+        array_push($menu, $item);
+
+
+        if ($show_aboutus['0']) {
+            $item = array('title' => 'О нас', 'alias' => 'about');
             array_push($menu, $item);
         }
 
-        $item = array('title' => 'Мы предлагаем', 'alias' => 'services');
-        array_push($menu, $item);
+        if ($show_service[0]) {
+            $item = array('title' => 'Мы предлагаем', 'alias' => 'services');
+            array_push($menu, $item);
+        }
 
-        $item = array('title' => 'Портфолио', 'alias' => 'showcase');
-        array_push($menu, $item);
+        if($show_portfolio[0]) {
+            $item = array('title' => 'Портфолио', 'alias' => 'showcase');
+            array_push($menu, $item);
+        }
 
-        $item = array('title' => 'Команда', 'alias' => 'our-team');
-        array_push($menu, $item);
+        if ($show_team['0']) {
+            $item = array('title' => 'Команда', 'alias' => 'our-team');
+            array_push($menu, $item);
+        }
+
 
 //        $item = array('title' => 'Pricing', 'alias' => 'pricing');
 //        array_push($menu, $item);
@@ -76,7 +94,12 @@ class IndexController extends Controller
             'services' => $services,
             'portfolios' => $portfolios,
             'peoples' => $peoples,
-            'tags' => $tags
+            'tags' => $tags,
+            'show_service' => $show_service,
+            'show_portfolio' => $show_portfolio,
+            'show_aboutus' => $show_aboutus,
+            'show_team' => $show_team,
+            'show_testimonials' => $show_testimonials
         ));
     }
 }

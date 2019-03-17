@@ -25,6 +25,7 @@
     <li><a class="subheader">Управление</a></li>
     <li class="{{ Request::path() == 'admin/messages' ? 'active' : '' }}"><a href="{{ route('messages') }}"><i class="material-icons pink-item">mail</i>Просмотр сообщений</a></li>
     <li class="{{ Request::path() == 'admin/peoples' ? 'active' : '' }}"><a href="{{ route('peoples') }}"><i class="material-icons pink-item">people</i>Редактирование команды</a></li>
+    <li class="{{ Request::path() == 'admin/settings' ? 'active' : '' }}"><a href="{{ route('settings') }}"><i class="material-icons pink-item">settings</i>Настройки</a></li>
     {{--<li><a href=""><i class="material-icons pink-item">thumbs_up_down</i>Настройка сервисов</a></li>--}}
     {{--<li><a href=""><i class="material-icons pink-item">note_add</i>Настройка портфолио</a></li>--}}
 

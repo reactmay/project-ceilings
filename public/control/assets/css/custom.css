@@ -302,3 +302,11 @@ div.quick-links a {
     transition: color .3s ease;
     text-transform: uppercase;
 }
+
+.collection {
+    box-shadow: 1px 1px 4px 0px;
+}
+
+.collection:hover {
+    color:#f4425c;
+}

@@ -5,21 +5,16 @@
             <div class="row">
                 @if($peoples)
                     @foreach($peoples as $people)
-                        <div class="col s6" style="width: 50%">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light circle responsive-img">
-                                    <img class="activator" src="{{ asset('meghna2/img/team/4.jpg') }}" height="220px">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">{{ $people->name }}<i class="material-icons right">more_vert</i></span>
-                                    {!! Html::link(route('peoplesEdit', ['people' => $people->id]), 'открыть', ['alt' => $people->name, 'data-toggle' => 'tooltip', 'title' => 'Открыть профиль']) !!}
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">{{ $people->name }}<i class="material-icons right">close</i></span>
-                                    <p>{{ $people->text }}</p>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="{{ asset('meghna2/img/team/'.$people->images) }}" alt="" class="circle">
+                                <span class="title">{{ $people->name }}</span>
+                                <p>Должность: {{ $people->position }}</p>
+                                <p>День рождения: {{ $people->date_if_birth }}</p>
+                                <p>{{ $people->text }}</p>
+                                {!! Html::link(route('peoplesEdit', ['people' => $people->id]), 'Открыть', ['alt' => $people->name, 'class' => 'secondary-content', 'data-toggle' => 'tooltip', 'title' => 'Открыть профиль']) !!}
+                            </li>
+                        </ul>
                     @endforeach
                 @endif
             </div>

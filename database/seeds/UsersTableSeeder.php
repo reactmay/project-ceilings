@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             User::create([
                 'name' => $seed[0],
                 'email' => $seed[1],
-                'password' => $seed[2],
+                'password' => bcrypt($seed[2]),
             ]);
         }
     }

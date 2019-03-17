@@ -9,6 +9,7 @@ use App\Portfolio;
 use App\People;
 use App\Service;
 use App\User;
+use App\Setting;
 
 use Illuminate\Support\Facades\DB;
 
@@ -114,5 +115,119 @@ class AdminController extends Controller
             return view('admin.chunks.peoples.peoplesEdit', $data);
         }
         abort(404);
+    }
+
+    public function settings_execute()
+    {
+        if (view()->exists('admin.chunks.settings.settings')) {
+            $settings = Setting::all();
+            $data = [
+                'title' => 'Настройки',
+                'settings' => $settings,
+            ];
+            return view('admin.chunks.settings.settings', $data);
+        }
+        abort(404);
+    }
+
+    public function settings_update(Request $request)
+    {
+        if ($request->isMethod('post')) {
+            $input = $request->except('_token');
+
+            DB::table('settings')
+                ->where('id', $request->id)
+                ->update(
+                    [
+                        'mail_admin' => $input['email'],
+                    ]);
+
+            if(isset($input['show_aboutus']))
+            {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_aboutus' => 1,
+                        ]);
+            } else {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_aboutus' => 0,
+                        ]);
+            }
+
+            if(isset($input['show_service']))
+            {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_service' => 1,
+                        ]);
+            } else {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_service' => 0,
+                        ]);
+            }
+
+            if(isset($input['show_portfolio']))
+            {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_portfolio' => 1,
+                        ]);
+            } else {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_portfolio' => 0,
+                        ]);
+            }
+
+            if(isset($input['show_team']))
+            {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_team' => 1,
+                        ]);
+            } else {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_team' => 0,
+                        ]);
+            }
+
+            if(isset($input['show_testimonials']))
+            {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_testimonials' => 1,
+                        ]);
+            } else {
+                DB::table('settings')
+                    ->where('id', $request->id)
+                    ->update(
+                        [
+                            'show_testimonials' => 0,
+                        ]);
+            }
+
+            return redirect('admin/settings');
+        }
     }
 }
