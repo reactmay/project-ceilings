@@ -38,6 +38,15 @@ in the materialize js file & I don't want that.
     });
     $('select').material_select();
     $('.collapsible').collapsible();
+
+    var d = new Date();
+    d.setFullYear( d.getFullYear() - 100 );
+    $('.datepicker').pickadate({
+        selectMonths: true,
+        selectYears: 50,
+        min: d,
+        max: new Date()
+    });
 </script>
 {{--<div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50" data-tooltip="Quick Links">--}}
 {{--<a class="btn-floating btn-large red">--}}

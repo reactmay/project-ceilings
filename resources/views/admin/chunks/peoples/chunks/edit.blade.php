@@ -7,14 +7,13 @@
             <form id="user">
                 <table class="table table-hover">
                     <tbody>
-                        @if($peoples)
-                            @foreach($peoples as $people)
                                 <tr>
                                     <td><label for="usrname">ИД в базе: </label></td>
-                                    <td><a>{{ $people->id }}</a></td>
+                                    <td><a>{{ $data['id'] }}</a></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="djoined">Дата рождения: </label></td><td><a>{{ $people->date_of_birth }}</a></td>
+                                    <td><label for="djoined">Дата рождения: </label></td>
+                                    <td><input type="date" class="datepicker" value="{{ $data['date_if_birth'] }}"></td>
                                 </tr>
                                 {{--<tr>--}}
                                     {{--<td><label for="ipaddress">Last IP Address: </label></td>--}}
@@ -31,7 +30,7 @@
                                 <tr>
                                     <input type="hidden" name="pastdata" value="" />
                                     <td><label for="usrname">Имя: </label></td>
-                                    <td><input type="text" name="usrname" value="{{ $people->name }}" /></td>
+                                    <td><input type="text" name="usrname" value="{{ $data['name'] }}" /></td>
                                 </tr>
                                 {{--<tr>--}}
                                     {{--<td><label for="email">E-mail: </label></td>--}}
@@ -39,7 +38,13 @@
                                 {{--</tr>--}}
                                 <tr>
                                     <td><label for="accesslevel">Должность: </label></td>
-                                    <td><input type="text" name="accesslevel" value="{{ $people->position }}" /></td>
+                                    <td><input type="text" name="accesslevel" value="{{ $data['position'] }}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="accesslevel">Фотография: </label></td>
+                                    <td>
+                                        <img src="{{ asset('meghna2/img/team/'.$data['images']) }}" alt="" class="circle">
+                                    </td>
                                 </tr>
                                 {{--<tr>--}}
                                     {{--<td><label for="email">Account Actions: </label></td>--}}
@@ -51,12 +56,10 @@
                                         {{--</div>--}}
                                     {{--</td>--}}
                                 {{--</tr>--}}
-                            @endforeach
-                        @endif
                     </tbody>
                 </table>
                 <br>
-                <div class="center-align"><input class="btn btn-success" type="submit" value="Сохранить" /></div>
+                <div class="center-align"><input class="btn btn-success" disabled type="submit" value="Сохранить" /></div>
             </form>
             <br><br>
             {{--<h2>DwightKSchrute's Account History</h2><br>--}}

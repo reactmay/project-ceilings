@@ -104,11 +104,13 @@ class AdminController extends Controller
         abort(404);
     }
 
-    public function people_edit_execute()
+    public function people_edit_execute(People $people, Request $request)
     {
+        $old = $people->toArray();
         if (view()->exists('admin.chunks.peoples.peoplesEdit')) {
             $peoples = People::all();
             $data = [
+                'data' => $old,
                 'title' => 'Редактирование карточки работника',
                 'peoples' => $peoples,
             ];
