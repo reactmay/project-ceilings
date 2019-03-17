@@ -14,6 +14,7 @@ class UsersTableSeeder extends Seeder
     {
         $seeds = [
             ['Сергей', 'zugurysus@gmail.com',  '12341234'],
+            ['Рома', 'roma@admin.ru', 'roma1234']
         ];
 
         foreach($seeds as $seed){
